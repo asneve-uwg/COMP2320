@@ -1,6 +1,31 @@
-public class Person{
-    String FirstName;
-    String LastName;
-    int age;
-    Date BirthDate;
+/**
+ * The person class represents an individual person in the system 
+ * with basic attributes such as name and age. It serves as a
+ * base class for ore specific types of people, like Employees and Patients.
+ */
+
+ class Person{
+    protected String name;
+    protected int age;
+    protected Date birthDate;
+
+    /**
+     * Constructor for the Person class
+     *
+     * @param name the name of the person
+     * @param age the age of the person
+     * @param birthDate the birth date of the person
+     */
+
+    public Person(String name, int age, Date birthDate){
+        this.name = name;
+        this.age = age;
+        this.birthDate = birthDate;
+ }
+
+ public void displayInfo(){
+        System.out.println("Name: " + this.name);
+        System.out.println("Age: " + this.age);
+        System.out.println("Birth Date: " + this.birthDate);
+ }
 }
