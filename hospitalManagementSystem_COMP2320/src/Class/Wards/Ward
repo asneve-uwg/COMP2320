@@ -1,0 +1,6 @@
+public class Ward {
+String type;
+int capacity;
+int occupants;
+boolean availability;
+}

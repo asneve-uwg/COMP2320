@@ -1,0 +1,3 @@
+public class EmployeeRoom extends Room{
+    String Department;
+}

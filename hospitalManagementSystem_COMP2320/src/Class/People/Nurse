@@ -1,0 +1,4 @@
+Public class Nurse extends Employee{
+    //Nurse specific attributes
+
+}

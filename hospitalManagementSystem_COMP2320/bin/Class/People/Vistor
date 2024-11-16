@@ -1,0 +1,7 @@
+public Class Vistor extends Person{
+    // This is the Vistor class that extends the Person class
+    // This class will be used to create Vistor objects
+    // This class will have the following attributes:
+    // - 
+    //
+}

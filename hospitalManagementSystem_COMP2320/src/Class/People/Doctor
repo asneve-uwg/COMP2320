@@ -1,0 +1,7 @@
+public Class Doctor Extends Employee{
+    // This is the Doctor class that extends the Employee class
+    // This class will be used to create Doctor objects
+    // This class will have the following attributes:
+    // - 
+    //
+}
