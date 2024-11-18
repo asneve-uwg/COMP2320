@@ -21,6 +21,11 @@ This project is a hospital room management system designed to track patient room
    ```bash
    git clone https://github.com/username/hospitalManagementSystem.git
 
+### using git on VsCode
+- git remote set-url origin https://github.com/asneve-uwg/hospitalManagementSystem_COMP2320.git
+- git commit -am 'comment'
+- git push origin 'branch'
+
 ### Things To Plan
 1. Constructor
 2. Class inheritance
