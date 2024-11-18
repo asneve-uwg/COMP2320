@@ -1,9 +1,45 @@
-public class Patient extends Person{
-char gender;
-String bloodType;
-String allergies;
-String medicalHistory;
-String currentMedication;
-String emergencyContact;
-int roomNumber;
+/**
+ * The Patient class extends the Person class to represent a patient
+ * in the system. In addtion to the attributes inherited from the Person
+ * a patient has gender, blood type, allergies, medical history, currentMedication
+ * emergency contact, and room number.
+ * 
+ * This class overides the displayInfo method from the Person class to display
+ * specific information about the patient.
+ */
+
+
+class Patient extends Person{
+private char gender;
+private String bloodType;
+private String allergies;
+private String medicalHistory;
+private String currentMedication;
+private String emergencyContact;
+private int roomNumber;
+
+/**
+ * Constructor for the Patient class
+ * 
+ * @param name the name of the patient
+ * @param age the age of the patient
+ * @param roomNumber the room number of the patient
+ */
+
+ public Patient(String name, int age, int roomNumber){
+     super(name, age);
+     this.roomNumber = roomNumber;
+ }
+
+ /**
+  * Override the displayInfo() method from the Person class 
+  to disp;ay specifice information to th patient
+  including Patient room number,
+  */
+
+    @Override
+    public void displayInfo(){
+        super.displayInfo();
+        System.out.println("Room Number: " + this.roomNumber);
+    }
 }

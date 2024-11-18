@@ -1,6 +1,27 @@
+/**
+ * Ward class is a super class for all the wards in the hospital
+ * It contains the capacity of the ward, the number of occupants in the ward, and the availability of the ward
+ * 
+ * 
+ */
 public class Ward {
 String type;
 int capacity;
 int occupants;
 boolean availability;
+
+/**
+ * Constructor for the Ward class
+ * 
+ * @param capacity the capacity of the ward
+ * @param occupants the number of occupants in the ward
+ * @param availability the availability of the ward
+ * 
+ */
+
+public Ward(int capacity, int occupants, boolean availability){
+    
+    this.capacity = capacity;
+    this.occupants = occupants;
+    this.availability = availability;
 }

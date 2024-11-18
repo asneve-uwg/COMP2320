@@ -1,7 +1,37 @@
+/**
+ * Doctor class extends Employee class to represent a doctor in the system.
+ * in addition to the attributes inherited from the Employee, a doctor has
+ * specialization, and years of experience.
+ */
+
 public Class Doctor Extends Employee{
-    // This is the Doctor class that extends the Employee class
-    // This class will be used to create Doctor objects
-    // This class will have the following attributes:
-    // - 
-    //
+  String specialization;
+
+    /**
+     * Constructor for the Doctor class
+     * 
+     * @param name the name of the doctor
+     * @param age the age of the doctor
+     * @param birthDate the birth date of the doctor
+     * @param employeeID the employee ID of the doctor
+     * @param department the department of the doctor
+     * @param position the position of the doctor
+     * @param specialization the specialization of the doctor
+     * @param yearsOfExperience the years of experience of the doctor
+     * 
+     */
+    public Doctor(String name, int age, Date birthDate, int employeeID, String department, String position, String specialization, int yearsOfExperience){
+        super(name, age, birthDate, employeeID, department, position);
+        this.specialization = specialization;
+}
+/**
+ * Override the displayInfo() method from the Employee class
+ * to display specific information about the doctor
+ * including specialization and years of experience.
+ */
+@Override
+public void displayInfo(){
+    super.displayInfo();
+    System.out.println("Specialization: " + this.specialization);
+}
 }

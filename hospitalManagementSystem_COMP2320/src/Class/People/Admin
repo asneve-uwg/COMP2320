@@ -1,3 +1,8 @@
+/**
+ * Admin Class extends Employee class to represent an admin in the system.
+ * In addition to the attributes inherited from the Employee, an admin has
+ * 
+ */
 public Class Admin extends Employee{
     // Attributes
     //

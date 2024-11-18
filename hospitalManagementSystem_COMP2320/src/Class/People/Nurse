@@ -1,3 +1,9 @@
+/**
+ * Nurse class that extends Employee class  to represent a nurse in the system.
+ * In addition to the attributes inherited from the Employee, a nurse has
+ * A nurse has a specialization, and years of experience, doctor they are working with.
+ * 
+ */
 Public class Nurse extends Employee{
     //Nurse specific attributes
 

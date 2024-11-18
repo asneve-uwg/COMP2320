@@ -1,5 +1,45 @@
+/**
+ * The employee class extends the Person class to represent an employee
+ * in the system. In addition to the attributes inherited from the Person
+ * a employee has employeeID, department, and position.
+ * 
+ * This class overrides the displayInfo method from the Person class to display
+ * 
+ */
 public class Employee extends Person{
 int emloyeeID;
 String department;
 String position;
+ String specialization;
+int yearsOfExperience;
+
+/**
+ * Constructor for the Employee class
+ * 
+ * @param name the name of the employee
+ * @param age the age of the employee
+ * @param birthDate the birth date of the employee
+ * @param employeeID the employee ID of the employee
+ * @param department the department of the employee
+ * @param position the position of the employee
+ * 
+ */
+
+ public Employee(String name, int age, Date birthDate, int employeeID, String department, String position){
+     super(name, age, birthDate);
+     this.employeeID = employeeID;
+     this.department = department;
+     this.position = position;
+ }
+/**
+ * Override the displayInfo() method from the Person class
+ * to display specific information about the employee
+ * including employee ID, department, and position.
+ */
+@Override
+public void displayInfo(){
+    super.displayInfo();
+    System.out.println("Employee ID: " + this.employeeID);
+    System.out.println("Department: " + this.department);
+    System.out.println("Position: " + this.position);
 }

@@ -1,3 +1,9 @@
+/*
+ * Technician class extends Employee class 
+ * to represent a technician in the system.
+ * in addition to the attributes inherited from the Employee, a technician has
+ * specialization, and years of experience, nurse and doctor they are working with.
+ */
 public Class Technician extends Employee{
 
     

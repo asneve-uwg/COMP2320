@@ -1,3 +1,8 @@
+/**
+ * Surgery class is a subclass of Ward class and represents the surgery ward in the hospital
+ * 
+ * 
+ */
 public class Surgery extends Ward{
     
 }
