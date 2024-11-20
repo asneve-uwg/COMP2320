@@ -1,13 +1,6 @@
-package people;
+package hospital.entities;
 
 public class Patient extends Person{
-	
-	
-	public Patient(String name, int age) {
-		super(name, age);
-		// TODO Auto-generated constructor stub
-	}
-
 	private char gender;
 //	private String bloodType;
 //	private String allergies;
@@ -16,23 +9,25 @@ public class Patient extends Person{
 //	private String emergencyContact;
 	private int roomNumber;
 
-			/**
-			 * Constructor for the Patient class
-			 * 
-			 * @param name the name of the patient
-			 * @param age the age of the patient
-			 * @param roomNumber the room number of the patient
-			 */
-	public Patient(String name, int age, int roomNumber){
-		 super(name, age);
-		 this.roomNumber = roomNumber;
-			 }
+	/**
+	 * Constructor for the Patient class
+	 * 
+	 * @param name the name of the patient
+	 * @param age the age of the patient
+	 * @param roomNumber the room number of the patient
+	 */
+	
+	public Patient(String name, int age, int id) {
+		super(name, age ,id);
+		// TODO Auto-generated constructor stub
+	}
 
-			 /**
-			  * Override the displayInfo() method from the Person class 
-			  to disp;ay specifice information to th patient
-			  including Patient room number,
-			  */
+
+	 /**
+	  * Override the displayInfo() method from the Person class 
+		to disp;ay specifice information to th patient
+		including Patient room number,
+		*/
 
 	@Override
 	public void displayInfo(){
