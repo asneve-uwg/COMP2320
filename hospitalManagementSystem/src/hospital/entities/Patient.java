@@ -1,7 +1,7 @@
 package hospital.entities;
 import hospital.exceptions.*;
 public class Patient extends Person{
-	private char gender;
+	private char gender;;
 //	private String bloodType;
 //	private String allergies;
 //	private String medicalHistory;
@@ -14,14 +14,21 @@ public class Patient extends Person{
 	 * 
 	 * @param name the name of the patient
 	 * @param age the age of the patient
+	 * @param object 
 	 * @param roomNumber the room number of the patient
 	 */
 	
+	public Patient(String name, int age, int id, int roomNumber) {
+		super(name, age ,id);
+		
+		
+	}
+	
 	public Patient(String name, int age, int id) {
 		super(name, age ,id);
-		// TODO Auto-generated constructor stub
+		
+		
 	}
-
 
 	 /**
 	  * Override the displayInfo() method from the Person class 
@@ -61,5 +68,7 @@ public class Patient extends Person{
 				    }
 				this.roomNumber = roomNumber;
 			}
+			
+			
 			
 	}

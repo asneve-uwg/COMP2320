@@ -1,4 +1,4 @@
-package main;
+package main.fileHandlers;
 
 import java.io.BufferedReader;
 import java.io.FileOutputStream;

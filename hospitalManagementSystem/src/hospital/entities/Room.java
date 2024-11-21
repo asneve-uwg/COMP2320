@@ -72,6 +72,8 @@ public class Room {
 	    public List<Patient> getCurrentPatients() {
 	        return currentPatients; // This should return a List<Patient>
 	    }
+	    
+	    
 		}
 
 
