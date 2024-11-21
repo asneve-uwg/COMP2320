@@ -1,8 +1,11 @@
 package hospital.testCases;
 
-	import hospital.entities.Patient;
-	import hospital.entities.Person;
-	import org.junit.jupiter.api.BeforeEach;
+import hospital.entities.Patient;
+import hospital.entities.Person;
+import hospital.exceptions.*;
+
+
+import org.junit.jupiter.api.BeforeEach;
 	import org.junit.jupiter.api.Test;
 	import static org.junit.jupiter.api.Assertions.*;
 
@@ -31,28 +34,48 @@ package hospital.testCases;
 	    @Test
 	    void testGetGender() {
 	        // Test the getter for gender
-	        patient.setGender('M');
+	        try {
+				patient.setGender('M');
+			} catch (InvalidGenderException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 	        assertEquals('M', patient.getGender(), "Gender should be 'M'.");
 	    }
 
 	    @Test
 	    void testSetGender() {
 	        // Test the setter for gender
-	        patient.setGender('F');
+	        try {
+				patient.setGender('F');
+			} catch (InvalidGenderException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 	        assertEquals('F', patient.getGender(), "Gender should be updated to 'F'.");
 	    }
 
 	    @Test
 	    void testGetRoomNumber() {
 	        // Test the getter for room number
-	        patient.setRoomNumber(101);
+	        try {
+				patient.setRoomNumber(101);
+			} catch (InvalidRoomNumberException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 	        assertEquals(101, patient.getRoomNumber(), "Room number should be 101.");
 	    }
 
 	    @Test
 	    void testSetRoomNumber() {
 	        // Test the setter for room number
-	        patient.setRoomNumber(102);
+	        try {
+				patient.setRoomNumber(102);
+			} catch (InvalidRoomNumberException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 	        assertEquals(102, patient.getRoomNumber(), "Room number should be updated to 102.");
 	    }
 
@@ -66,8 +89,18 @@ package hospital.testCases;
 	    @Test
 	    void testDisplayInfo_PatientDetails() {
 	        // Set some details and capture the output (just a basic validation here)
-	        patient.setRoomNumber(202);
-	        patient.setGender('F');
+	        try {
+				patient.setRoomNumber(202);
+			} catch (InvalidRoomNumberException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	        try {
+				patient.setGender('F');
+			} catch (InvalidGenderException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 	        // Assuming the displayInfo method prints information, we could use a custom method to capture stdout if necessary
 	        // For now, just verify no exception occurs during display
 	        assertDoesNotThrow(() -> patient.displayInfo(), "displayInfo should not throw any exception.");
@@ -83,7 +116,7 @@ package hospital.testCases;
 	    @Test
 	    void testSetInvalidRoomNumber() {
 	        // Test invalid room number input (e.g., negative or zero)
-	        assertThrows(IllegalArgumentException.class, () -> {
+	        assertThrows(InvalidRoomNumberException.class, () -> {
 	            patient.setRoomNumber(-1);
 	        }, "Room number cannot be negative.");
 	    }

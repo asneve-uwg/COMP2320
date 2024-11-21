@@ -1,5 +1,5 @@
 package hospital.entities;
-
+import hospital.exceptions.*;
 public class Patient extends Person{
 	private char gender;
 //	private String bloodType;
@@ -42,15 +42,23 @@ public class Patient extends Person{
 				return gender;
 			}
 
-			public void setGender(char gender) {
+			public void setGender(char gender) throws InvalidGenderException {
+				if (gender != 'M' && gender != 'F' && gender != 'O') {
+				        throw new InvalidGenderException("Invalid gender: " + gender + ". Allowed values are 'M', 'F', or 'O'.");
+				    }
+				
 				this.gender = gender;
+				
 			}
 
 			public int getRoomNumber() {
 				return roomNumber;
 			}
 
-			public void setRoomNumber(int roomNumber) {
+			public void setRoomNumber(int roomNumber) throws InvalidRoomNumberException {
+				 if (roomNumber <= 0) {
+				        throw new InvalidRoomNumberException("Invalid room number: " + roomNumber + ". Room number must be greater than 0.");
+				    }
 				this.roomNumber = roomNumber;
 			}
 			

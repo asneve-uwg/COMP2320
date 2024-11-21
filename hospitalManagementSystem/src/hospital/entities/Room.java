@@ -37,12 +37,13 @@ public class Room {
 	 
 	 public void removePatient(int patientId) throws PatientNotFoundException {
 		 for (Patient patient : currentPatients) {
-			 if (patient.getId() ==patientId) {
+			 if (patient.getId() == patientId) {
 				 currentPatients.remove(patient);
 				 return;
 			 }
-		throw new PatientNotFoundException();
 		 }
+		 throw new PatientNotFoundException("Patient with ID " + patientId + " not found!");
+
 		 
 	 }
 	 
