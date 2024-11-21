@@ -41,9 +41,14 @@ public class Room {
 				 currentPatients.remove(patient);
 				 return;
 			 }
+		throw new PatientNotFoundException();
 		 }
 		 
 	 }
+	 
+	
+	 
+	 
 //	    public int getFloor() {
 //			return floor;
 //		}
@@ -62,5 +67,10 @@ public class Room {
 		public void setCapacity(int capacity) {
 			this.capacity = capacity;
 		}
-}
+		  // Getter for the current list of patients
+	    public List<Patient> getCurrentPatients() {
+	        return currentPatients; // This should return a List<Patient>
+	    }
+		}
+
 

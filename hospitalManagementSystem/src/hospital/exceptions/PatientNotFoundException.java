@@ -2,10 +2,13 @@ package hospital.exceptions;
 
 public class PatientNotFoundException extends Exception {
 
-	private static final long serialVersionUID = 1L;
-	
-	public PatientNotFoundException() {
-		super("Patient not found!");
-	}
+    // Default constructor with a generic message
+    public PatientNotFoundException() {
+        super("Patient not found!");
+    }
 
+    // Constructor that accepts a custom message
+    public PatientNotFoundException(String message) {
+        super(message);
+    }
 }
