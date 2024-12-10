@@ -1,16 +1,5 @@
 
-1, 2
-Room Number: 1
-Capacity: 2
-Room Number: 1
-Capacity: 2
 Room Number: 2
+Capacity: 3
+Room Number: 3
 Capacity: 1
-Room Number: 1
-Capacity: 2
-Room Number: 2
-Capacity: 2
-Room Number: 1
-Capacity: 2
-Room Number: 1
-Capacity: 2

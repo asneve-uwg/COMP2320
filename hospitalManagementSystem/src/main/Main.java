@@ -21,7 +21,7 @@ public class Main {
 
         do {
             // Prompt user for input
-            System.out.println("Enter command ('r' to add room, 'p' to add patient, 's' to show all, 'q' to quit): ");
+            System.out.println("Enter command ('r' to add room, 'p' to add patient, 's' to show all patients, 'q' to quit): ");
             userCommand = scnr.next();
 
             // Validate input: only accept 'r', 'p', 's', or 'q'

@@ -7,7 +7,7 @@ import hospital.exceptions.RoomFullException;
 
 
 public class Room {
-//	protected int floor;
+
     protected int roomNumber;
     protected int  capacity;
     private List<Patient> currentPatients;
