@@ -6,8 +6,8 @@ import hospital.exceptions.*;
 
 
 import org.junit.jupiter.api.BeforeEach;
-	import org.junit.jupiter.api.Test;
-	import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 	/**
 	 * JUnit test cases for the Patient class.

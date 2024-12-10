@@ -1,7 +1,7 @@
 package hospital.entities;
 import hospital.exceptions.*;
 public class Patient extends Person{
-	private char gender;;
+	private char gender;
 //	private String bloodType;
 //	private String allergies;
 //	private String medicalHistory;
